@@ -1,0 +1,8 @@
+RULE default boum
+CLASS StatisticService
+METHOD update
+HELPER fr.javafreelance.byteman.helper.CustomHelper
+AT WRITE counter
+IF true
+DO sout("out");serr("err")
+ENDRULE
